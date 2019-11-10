@@ -1,0 +1,243 @@
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+/*
+* Publish/Subscribe
+*/
+h1 {
+    font-size: 30px;
+    color: #e9632f94;
+}
+
+h3 {
+    color: #2f4be994
+}
+#observer {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-betwen;
+    grid-gap: 5px;
+    width: 100%;
+  }
+
+.employer {
+    padding: 10px;
+    background-color: rgba(42, 148, 197, 0.233);
+}
+
+.employee {
+    border: 1px soid green;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: antiquewhite;
+    margin: 20px 0 20px 0;
+}
+
+.agencies {
+    color: burlywood;
+    padding: 10px;
+    height: 250px;
+    box-sizing: border-box;
+    background-color: rgba(57, 255, 73, 0.233);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-betwen;
+    grid-gap: 5px;
+}
+
+form > input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form > button {
+    display: block;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#resume {
+    width: 300px;
+    height: 100%;
+    display: block;
+    background-color: #0e25f07e;
+    margin-left: 20%;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 5px;
+
+}
+
+/*
+* Mediator pattern
+*/
+#mediator {
+    display: flex;
+    flex-direction: row;
+}
+
+#mediator > div {
+    width: 500px;
+    min-height: 500px;
+    background-color: bisque;
+    margin: 20px;
+    padding: 20px;
+}
+
+#mediator > div > div {
+    padding-top: 25px;
+}
+
+#mediator > div > div > input:nth-child(3) {
+    width: 70px;
+    border: 2px dashed red;
+}
+
+/*
+* Command pattern
+*/
+#calc {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(124, 179, 241);
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-radius: 20px;
+}
+
+.display {
+    display: block;
+    margin: auto;
+    padding: 20px 15px 20px 15px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(red, green, blue, alpha)
+}
+
+.operation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.operation > div {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: burlywood;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.operation > div:hover {
+    background-color: aliceblue;
+}
+
+.numbers {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.numbers > div {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(201, 98, 30);
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.numbers > div:hover {
+    background-color: aliceblue;
+}
+
+/*
+* Facade pattern
+*/
+
+#table {
+    width: 500px;
+    float: right;
+}
+
+table {
+    width: 600px;
+    float: left;
+    border: 2px solid black
+}
+
+.bomb {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/bomb.jpg);
+    background-size: 100%;
+    margin: 9px;
+}
+
+#detonate {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/fire.png);
+    background-size: 100%;
+    margin: 9px;
+    border: 1px solid red;
+}
+
+.opened {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#ffffcc, #ffff80); 
+    text-align: center;
+    color:green;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.closed {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#f0f5f5, #3d5c5c);
+    text-align: center;
+    color:green;
+    border: 1px solid black
+}
+
+.nearBomb {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#ffcccc, #ff8080); 
+    text-align: center;
+    color:green;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
